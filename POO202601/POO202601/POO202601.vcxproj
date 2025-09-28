@@ -161,6 +161,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="include\Estudiantes.h" />
     <ClInclude Include="include\Items.h" />
     <ClInclude Include="include\Prerequisites.h" />
   </ItemGroup>
