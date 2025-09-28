@@ -29,6 +29,12 @@ public:
 				}
 			}
 
+			void Compra(UsuarioBanco& cuentaOrigen, std::string compra, double monto, int noRef) {
+				cuentaOrigen.getCuenta().consultarSaldo() -= monto;
+				std::cout << "Compra de " << compra << " precio: " << monto
+					<< ", total de la cuenta " << cuentaOrigen.getCuenta().consultarSaldo() << " numero referencia: " << noRef;
+			}
+
 
 	
 
