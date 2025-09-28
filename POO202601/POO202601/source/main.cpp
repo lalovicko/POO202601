@@ -1,82 +1,29 @@
 #include "Prerequisites.h"
-#include "Estudiantes.h"
-class
-	Circulo {
-public:
-	Circulo(float radio) :m_radio(radio){}
-	float getRadio()const { return m_radio; }
-	void area() const {
-		float area = m_pi * (m_radio * m_radio);
-		std::cout << "El area del circulo es " << area << std::endl;
-	}
-	void perimetro()const {
-		float perimetro = m_pi * (m_radio * 2);
-		std::cout << "El perimetro del circulo es " << perimetro << std::endl;
-	}
-private:
-	float m_radio;
-	float m_pi = 3.1416f;
-};	
-
-class
-	Lista {
-public:
-	// Agregar estudiante
-	void agregarEstudiante(const Estudiante& e) {
-		estudiantes.push_back(e);
-	}
-
-	// Mostrar los estudiantes
-	void mostrarEstudiantes() const {
-		std::cout << "    Lista de Estudiantes "<<std::endl;
-		for (size_t i = 0; i < estudiantes.size(); i++) {
-			std::cout << i + 1 << ". " << estudiantes[i].getNombre() << ", Edad: " << estudiantes[i].GetCantidad() << std::endl;
-		}
-	}
-
-private:
-	std::vector<Estudiante> estudiantes;
-
-};
-
+#include "Banco.h"
+#include "UsuarioBanco.h"
 int
 main() {
-	float radio;
-	int opcion;
-	Lista lista;
-	int numero;
-	std::cout << "Cuantos estudiantes desea ingresar? ";
-	std::cin >> numero;
-
-	for (int i = 0; i < numero; i++) {
-		std::string nombre;
-		int edad;
-		std::cout << "Nombre del estudiante " << i + 1 << ": ";
-		std::cin >> nombre;
-		std::cout << "Edad del estudiante " << i + 1 << ": ";
-		std::cin >> edad;
-
-		Estudiante e(nombre, edad);
-		lista.agregarEstudiante(e);
-	}
-
-	lista.mostrarEstudiantes();
-	Fecha hoy;
-	hoy.GetFecha();
-	std::cout << "Cual es el radio?" << std::endl;
-	std::cin >> radio;
-	Circulo c(radio);
-	
-	std::cout << "Que desea hacer? 1-sacar area 2-sacar perimetro" << std::endl;
-	std::cin >> opcion;
-	switch (opcion) {
-	case 1:
-		c.area();
-		break;
-	case 2:
-		c.perimetro();
-		break;
-	}
+	Banco BBVA;
+	UsuarioBanco Dobeto = BBVA.nuevoUsuario(CuentaBancaria("Dobeto",0001,15000.0));
+	UsuarioBanco Tuto = BBVA.nuevoUsuario(CuentaBancaria("Tuto", 0002, 20000.0));
+	//Banco Cuenta1("Churro", 2006141227, 15000.0);
+	//Banco Cuenta2("Ali", 2006141027, 20000.0);
+	std::cout << "Antes de la transferencia: " << std::endl;
+	Dobeto.getCuenta().consultarSaldo();
+	Tuto.getCuenta().consultarSaldo();
+	//Cuenta1.consultarSaldo();
+	//Cuenta2.consultarSaldo();
+	std::cout << "Realizando transferencia: " << std::endl;
+	BBVA.realizarTransferencia(Tuto, Dobeto, 1500.0, 2809);
+	Dobeto.getCuenta().aplicarInteres(5);
+	//Cuenta1.realizarTranferencia(Cuenta2, 2500);
+	Dobeto.getCuenta().consultarSaldo();
+	Tuto.getCuenta().consultarSaldo();
+	std::cout << "Despues de la transferencia: " << std::endl;
+	//Cuenta1.consultarSaldo();
+	//Cuenta2.consultarSaldo();
+	Dobeto.getCuenta().consultarSaldo();
+	Tuto.getCuenta().consultarSaldo();
 
 	return 0;
 }
