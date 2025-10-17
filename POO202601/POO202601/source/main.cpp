@@ -24,7 +24,7 @@ public:
             std::cout << "Marca: " << m_marca << std::endl;
             std::cout << "Fabricado: " << m_fechaCreacion.toString() << std::endl;
             std::cout << "Contenido: " << contenido << std::endl;
-            std::cout << "Código: " << m_codigo << std::endl;
+            std::cout << "Codigo: " << m_codigo << std::endl;
             std::cout << "Comestible" << std::endl;
             break;
         case ROPA:
