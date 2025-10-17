@@ -1,34 +1,45 @@
 #pragma once
-
 #include "Prerequisites.h"
-class MiSingleton
+class RegistroActividad
 {
 private:
-		MiSingleton() : data(0) {} //constructor privado
-	~MiSingleton() = default; //destructor privado
+	RegistroActividad() : data("") {} //constructor privado
+	~RegistroActividad() = default; //destructor privado
 
 public:
-	static MiSingleton* getInstance()
+	static RegistroActividad* getInstance()
 	{
 		if (instance == nullptr)
 		{
-			instance = new MiSingleton();
+			instance = new RegistroActividad();
 		}
 		return instance;
 	}
-	int
+	std::string
 		getData() const {
 		return data;
 	}
 
 	void
-		setData(int value) {
+		setData(std::string value) {
 		data = value;
+	}
+
+	void agregarRegistro(const std::string& actividad) {
+		actividades.push_back(actividad);
+	}
+
+	void mostrarRegistros() const {
+		std::cout << "Registros de Actividades:" << std::endl;
+		for (const auto& actividad : actividades) {
+			std::cout << "- " << actividad << std::endl;
+		}
 	}
 
 private:
 	//instancia unica de la clase
-	static MiSingleton* instance;
-	int data;
+	static RegistroActividad* instance;
+	std::string data;
+	std::vector<std::string> actividades;
 };
 
