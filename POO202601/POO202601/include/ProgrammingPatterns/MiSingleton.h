@@ -25,7 +25,7 @@ public:
 		data = value;
 	}
 
-	void agregarRegistro(const std::string& actividad) {
+	void agregarActividad(const std::string& actividad) {
 		actividades.push_back(actividad);
 	}
 

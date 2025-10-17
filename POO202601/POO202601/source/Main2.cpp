@@ -6,24 +6,11 @@ RegistroActividad* RegistroActividad::instance = nullptr;
 
 int main() {
 	int eleccion;
-	do {
-		std::cout << "Que desea hacer? 1-agregar registro 2-mostrar 2-salir" << std::endl;
-		std::cin >> eleccion;
-		switch (eleccion) {
-			case 1: {
-				std::string actividad;
-				std::cout << "Ingrese la actividad a registrar: ";
-				std::cin >> actividad;
-				RegistroActividad::getInstance()->agregarRegistro(actividad);
-				break;
-			}
-			
-				  case 2: {
-				RegistroActividad::getInstance()->mostrarRegistros();
-				break;
-				  }
-
-	}
-	} while (eleccion != 3);
+	RegistroActividad* registro = RegistroActividad::getInstance();
+	RegistroActividad* registro2 = RegistroActividad::getInstance();
+	std::cout << "Que actividad desea registrar?" << std::endl;
+	registro->agregarActividad("Correr 5km");
+	registro->agregarActividad("Leer un libro");
+	registro2->mostrarRegistros();
 	return 0;
 }
