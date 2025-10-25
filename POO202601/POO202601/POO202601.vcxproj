@@ -166,6 +166,7 @@
     <ClInclude Include="include\Estudiantes.h" />
     <ClInclude Include="include\Items.h" />
     <ClInclude Include="include\Prerequisites.h" />
+    <ClInclude Include="include\ProgrammingPatterns\FactoryMethod.h" />
     <ClInclude Include="include\ProgrammingPatterns\MiSingleton.h" />
     <ClInclude Include="include\UsuarioBanco.h" />
   </ItemGroup>

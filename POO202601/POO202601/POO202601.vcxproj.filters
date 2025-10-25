@@ -36,8 +36,11 @@
     <ClInclude Include="include\UsuarioBanco.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\FactoryMethod.h">
+      <Filter>Header Files\ProgrammingPaterns</Filter>
+    </ClInclude>
     <ClInclude Include="include\ProgrammingPatterns\MiSingleton.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\ProgrammingPaterns</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

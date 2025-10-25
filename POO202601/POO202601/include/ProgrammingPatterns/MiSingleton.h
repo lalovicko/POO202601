@@ -16,7 +16,7 @@ public:
 		return instance;
 	}
 	std::string
-		getData() const {
+		getData() const { 
 		return data;
 	}
 
