@@ -72,6 +72,24 @@
     <ClInclude Include="include\ProgrammingPatterns\AbstractFactory\FabricaConcreta.h">
       <Filter>Header Files\ProgrammingPatterns\AbstractFactory</Filter>
     </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\AbstractFactory\Mueble.h">
+      <Filter>Header Files\ProgrammingPatterns\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\AbstractFactory\Silla.h">
+      <Filter>Header Files\ProgrammingPatterns\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\AbstractFactory\Mesa.h">
+      <Filter>Header Files\ProgrammingPatterns\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\AbstractFactory\FactoriaMuebles.h">
+      <Filter>Header Files\ProgrammingPatterns\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\AbstractFactory\FactoriaMueblesRusticos.h">
+      <Filter>Header Files\ProgrammingPatterns\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\AbstractFactory\FactoriaMueblesModernos.h">
+      <Filter>Header Files\ProgrammingPatterns\AbstractFactory</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\Main2.cpp">
@@ -81,6 +99,12 @@
       <Filter>Source Files\ProgrammingPatterns\AbstractFactory</Filter>
     </ClCompile>
     <ClCompile Include="source\ProgrammingPatterns\AbstractFactory\ProductoB1.cpp">
+      <Filter>Source Files\ProgrammingPatterns\AbstractFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ProgrammingPatterns\AbstractFactory\Silla.cpp">
+      <Filter>Source Files\ProgrammingPatterns\AbstractFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ProgrammingPatterns\AbstractFactory\Mesa.cpp">
       <Filter>Source Files\ProgrammingPatterns\AbstractFactory</Filter>
     </ClCompile>
   </ItemGroup>
