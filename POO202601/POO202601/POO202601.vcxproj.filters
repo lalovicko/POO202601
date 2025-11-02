@@ -13,8 +13,17 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Header Files\ProgrammingPaterns">
+    <Filter Include="Header Files\ProgrammingPatterns">
       <UniqueIdentifier>{b48a9f3c-6954-4bf3-aa9d-9d3dc8acdb66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ProgrammingPatterns\AbstractFactory">
+      <UniqueIdentifier>{e709e74f-f13f-461b-9bb9-6e7a09a128d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ProgrammingPatterns">
+      <UniqueIdentifier>{eab4be36-ad02-4470-9126-7fa7f13b837d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ProgrammingPatterns\AbstractFactory">
+      <UniqueIdentifier>{492ce4c5-ec1a-4644-b730-14c647417a02}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -37,18 +46,42 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="include\ProgrammingPatterns\FactoryMethod.h">
-      <Filter>Header Files\ProgrammingPaterns</Filter>
+      <Filter>Header Files\ProgrammingPatterns</Filter>
     </ClInclude>
     <ClInclude Include="include\ProgrammingPatterns\MiSingleton.h">
-      <Filter>Header Files\ProgrammingPaterns</Filter>
+      <Filter>Header Files\ProgrammingPatterns</Filter>
     </ClInclude>
     <ClInclude Include="include\ProgrammingPatterns\PracticaFactoryMethod.h">
-      <Filter>Header Files\ProgrammingPaterns</Filter>
+      <Filter>Header Files\ProgrammingPatterns</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\AbstractFactory\ProductoA.h">
+      <Filter>Header Files\ProgrammingPatterns\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\AbstractFactory\ProductoB.h">
+      <Filter>Header Files\ProgrammingPatterns\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\AbstractFactory\FabricaAbstracta.h">
+      <Filter>Header Files\ProgrammingPatterns\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\AbstractFactory\ProductoA1.h">
+      <Filter>Header Files\ProgrammingPatterns\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\AbstractFactory\ProductoB1.h">
+      <Filter>Header Files\ProgrammingPatterns\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\AbstractFactory\FabricaConcreta.h">
+      <Filter>Header Files\ProgrammingPatterns\AbstractFactory</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\Main2.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ProgrammingPatterns\AbstractFactory\ProductoA1.cpp">
+      <Filter>Source Files\ProgrammingPatterns\AbstractFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ProgrammingPatterns\AbstractFactory\ProductoB1.cpp">
+      <Filter>Source Files\ProgrammingPatterns\AbstractFactory</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
