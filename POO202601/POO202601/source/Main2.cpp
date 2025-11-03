@@ -1,20 +1,34 @@
 #include "Prerequisites.h"
-#include "ProgrammingPatterns/Composite/Composite.h"
-#include "ProgrammingPatterns/Composite/Hoja.h"
+#include "ProgrammingPatterns/Composite/Sistema.h"
+#include "ProgrammingPatterns/Composite/SistemaCarpeta.h"
+#include "ProgrammingPatterns/Composite/SistemaArchivo.h"
 
 
 int main() {
-	Hoja* hoja1 = new Hoja();
-	Hoja* hoja2 = new Hoja();
-	Composite* composite = new Composite();
+	Archivo* archivo1 = new Archivo();
+	Archivo* archivo2 = new Archivo();
+	SistemaArchivo* sistemaArchivo = new SistemaArchivo();
+	sistemaArchivo->AgregarSistema(archivo1);
+	sistemaArchivo->AgregarSistema(archivo2);
+	sistemaArchivo->MostrarInfo();
 
-	composite->add(hoja1);
-	composite->add(hoja2);
-	composite->operacion();
+	Carpeta* carpeta = new Carpeta();
+	Carpeta* carpeta2 = new Carpeta();
+	SistemaCarpeta* sistemaCarpeta = new SistemaCarpeta();
+	sistemaCarpeta->AgregarSistema(carpeta);
+	sistemaCarpeta->AgregarSistema(carpeta2);
+	sistemaCarpeta->MostrarInfo();
 
-	delete hoja1;
-	delete hoja2;
-	delete composite;
+	delete archivo1;
+	delete archivo2;
+	delete carpeta;
+	delete carpeta2;
+	delete sistemaArchivo;
+	delete sistemaCarpeta;
+
+
+
+
 
 	return 0;
 }
