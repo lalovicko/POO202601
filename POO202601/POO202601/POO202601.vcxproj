@@ -189,6 +189,9 @@
     <ClInclude Include="include\ProgrammingPatterns\FactoryMethod.h" />
     <ClInclude Include="include\ProgrammingPatterns\MiSingleton.h" />
     <ClInclude Include="include\ProgrammingPatterns\PracticaFactoryMethod.h" />
+    <ClInclude Include="include\ProgrammingPatterns\Prototype\DocumentoConcretoImagen.h" />
+    <ClInclude Include="include\ProgrammingPatterns\Prototype\DocumentoConcretoTexto.h" />
+    <ClInclude Include="include\ProgrammingPatterns\Prototype\DocumentoPrototype.h" />
     <ClInclude Include="include\ProgrammingPatterns\Prototype\Prototype.h" />
     <ClInclude Include="include\ProgrammingPatterns\Prototype\PrototypeConcreto.h" />
     <ClInclude Include="include\UsuarioBanco.h" />

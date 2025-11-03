@@ -129,6 +129,15 @@
     <ClInclude Include="include\ProgrammingPatterns\Prototype\PrototypeConcreto.h">
       <Filter>Header Files\ProgrammingPatterns\Prototype</Filter>
     </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Prototype\DocumentoPrototype.h">
+      <Filter>Header Files\ProgrammingPatterns\Prototype</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Prototype\DocumentoConcretoTexto.h">
+      <Filter>Header Files\ProgrammingPatterns\Prototype</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Prototype\DocumentoConcretoImagen.h">
+      <Filter>Header Files\ProgrammingPatterns\Prototype</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\Main2.cpp">
