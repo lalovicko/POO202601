@@ -1,20 +1,18 @@
 #include "Prerequisites.h"
-#include "ProgrammingPatterns/Adapter/Figuras.h"
-#include "ProgrammingPatterns/Adapter/Dibujable.h"
-#include "ProgrammingPatterns/Adapter/FigurasAdapter.h"
+#include "ProgrammingPatterns/Decorator/ComponenteConcreto.h"
+#include "ProgrammingPatterns/Decorator/DecoratorConcretoA.h"
+#include "ProgrammingPatterns/Decorator/DecoratorConcretoB.h"
 
 int main() {
-	Circulo* circulo = new Circulo();
-	Cuadrado* cuadrado = new Cuadrado();
+	ComponenteConcreto* Objeto = new ComponenteConcreto();
+	DecoratorConcretoA* DecoradorA = new DecoratorConcretoA(Objeto);
+	DecoratorConcretoB* DecoradorB = new DecoratorConcretoB(DecoradorA);
 
-	Dibujable* adaptadorCirculo = new CirculoAdapter(circulo);
-	Dibujable* adaptadorCuadrado = new CuadradoAdapter(cuadrado);
+	Objeto->operacion();
+	DecoradorA->operacion();
+	DecoradorB->operacion();
 
-	adaptadorCirculo->dibujar();
-	adaptadorCuadrado->dibujar();
-
-	delete adaptadorCirculo;
-	delete adaptadorCuadrado;
-	delete circulo;
-	delete cuadrado;
+	delete DecoradorB;
+	delete DecoradorA;
+	delete Objeto;
 }

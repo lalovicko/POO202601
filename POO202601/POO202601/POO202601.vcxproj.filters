@@ -37,6 +37,9 @@
     <Filter Include="Header Files\ProgrammingPatterns\Adapter">
       <UniqueIdentifier>{04bc6bdc-793d-432d-a349-a2c3d12543a6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\ProgrammingPatterns\Decorator">
+      <UniqueIdentifier>{ca43ee28-6bab-4674-b868-9b5cb07f8214}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Prerequisites.h">
@@ -158,6 +161,21 @@
     </ClInclude>
     <ClInclude Include="include\ProgrammingPatterns\Adapter\FigurasAdapter.h">
       <Filter>Header Files\ProgrammingPatterns\Adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Decorator\Componente.h">
+      <Filter>Header Files\ProgrammingPatterns\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Decorator\ComponenteConcreto.h">
+      <Filter>Header Files\ProgrammingPatterns\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Decorator\Decorator.h">
+      <Filter>Header Files\ProgrammingPatterns\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Decorator\DecoratorConcretoA.h">
+      <Filter>Header Files\ProgrammingPatterns\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Decorator\DecoratorConcretoB.h">
+      <Filter>Header Files\ProgrammingPatterns\Decorator</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
