@@ -1,34 +1,28 @@
 #include "Prerequisites.h"
-#include "ProgrammingPatterns/AbstractFactory/FabricaConcreta.h"
-#include "ProgrammingPatterns/AbstractFactory/FactoriaMueblesRusticos.h"
-#include "ProgrammingPatterns/AbstractFactory/FactoriaMueblesModernos.h"
+#include "ProgrammingPatterns/Builder/ConstructorPizza.h"
+#include "ProgrammingPatterns/Builder/Pizza.h"
+#include "ProgrammingPatterns/Builder/BuilderPizzaHawaiana.h"
+#include "ProgrammingPatterns/Builder/BuilderPizzaVegetariana.h"
 int main() {
-	FabricaAbstracta* fabrica = new FabricaConcreta();
-	ProductoA* productoA = fabrica->crearProductoA();
-	ProductoB* productoB = fabrica->crearProductoB();
+	ConstructorPizza* Hawaiana = new BuilderPizzaHawaiana();
+	ConstructorPizza* Vegetariana = new BuilderPizzaVegetariana();
+	Hawaiana->BuildIngredientes();
+	Vegetariana->BuildIngredientes();
 
-	productoA->OperacionA();
-	productoB->OperacionB();
+	Pizza* pizzaHawaiana = Hawaiana->GetPizza();
+	std::cout << "Pizza Hawaiana: " << std::endl;
+	pizzaHawaiana->showIngredientes();
 
-	delete fabrica;
-	delete productoA;
-	delete productoB;
+	Pizza* pizzaVegetariana = Vegetariana->GetPizza();
+	std::cout << "Pizza Vegetariana: " << std::endl;
+	pizzaVegetariana->showIngredientes();
 
-	//Practica meubles
-	FactoriaMuebles* fabricaMueblesRusticos = new FactoriaMueblesRusticos();
-	Silla* sillaRustica = fabricaMueblesRusticos->crearSilla();
-	Mesa* mesaRustica = fabricaMueblesRusticos->crearMesa();
 
-	std::cout << "Muebles Rústicos:" << std::endl;
-	sillaRustica->Descripcion();
-	sillaRustica->Color();
-	mesaRustica->Descripcion();
-	mesaRustica->Color();
-
+	delete Hawaiana;
+	delete pizzaHawaiana;
+	delete Vegetariana;
+	delete pizzaVegetariana;
 
 
 	return 0;
-
-
-	
 }

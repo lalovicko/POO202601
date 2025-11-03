@@ -25,6 +25,12 @@
     <Filter Include="Source Files\ProgrammingPatterns\AbstractFactory">
       <UniqueIdentifier>{492ce4c5-ec1a-4644-b730-14c647417a02}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\ProgrammingPatterns\Builder">
+      <UniqueIdentifier>{25534bbe-7e5d-44dd-a7af-7e00b6ad0c87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ProgrammingPatterns\Builder">
+      <UniqueIdentifier>{b3a8b09f-635e-4d67-8cee-f2fddf657127}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Prerequisites.h">
@@ -90,6 +96,30 @@
     <ClInclude Include="include\ProgrammingPatterns\AbstractFactory\FactoriaMueblesModernos.h">
       <Filter>Header Files\ProgrammingPatterns\AbstractFactory</Filter>
     </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Builder\Producto.h">
+      <Filter>Header Files\ProgrammingPatterns\Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Builder\Builder.h">
+      <Filter>Header Files\ProgrammingPatterns\Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Builder\BuilderConcreto.h">
+      <Filter>Header Files\ProgrammingPatterns\Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Builder\Director.h">
+      <Filter>Header Files\ProgrammingPatterns\Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Builder\Pizza.h">
+      <Filter>Header Files\ProgrammingPatterns\Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Builder\ConstructorPizza.h">
+      <Filter>Header Files\ProgrammingPatterns\Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Builder\BuilderPizzaHawaiana.h">
+      <Filter>Header Files\ProgrammingPatterns\Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Builder\BuilderPizzaVegetariana.h">
+      <Filter>Header Files\ProgrammingPatterns\Builder</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\Main2.cpp">
@@ -106,6 +136,9 @@
     </ClCompile>
     <ClCompile Include="source\ProgrammingPatterns\AbstractFactory\Mesa.cpp">
       <Filter>Source Files\ProgrammingPatterns\AbstractFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ProgrammingPatterns\Builder\BuilderConcreto.cpp">
+      <Filter>Source Files\ProgrammingPatterns\Builder</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
