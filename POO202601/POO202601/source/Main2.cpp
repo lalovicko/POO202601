@@ -1,28 +1,16 @@
 #include "Prerequisites.h"
-#include "ProgrammingPatterns/Builder/ConstructorPizza.h"
-#include "ProgrammingPatterns/Builder/Pizza.h"
-#include "ProgrammingPatterns/Builder/BuilderPizzaHawaiana.h"
-#include "ProgrammingPatterns/Builder/BuilderPizzaVegetariana.h"
+#include "ProgrammingPatterns/Prototype/Prototype.h"
+#include "ProgrammingPatterns/Prototype/PrototypeConcreto.h"
 int main() {
-	ConstructorPizza* Hawaiana = new BuilderPizzaHawaiana();
-	ConstructorPizza* Vegetariana = new BuilderPizzaVegetariana();
-	Hawaiana->BuildIngredientes();
-	Vegetariana->BuildIngredientes();
+	Prototype* prototipo1 = new PrototypeConcreto();
+	prototipo1->config("Ejemplo");
 
-	Pizza* pizzaHawaiana = Hawaiana->GetPizza();
-	std::cout << "Pizza Hawaiana: " << std::endl;
-	pizzaHawaiana->showIngredientes();
-
-	Pizza* pizzaVegetariana = Vegetariana->GetPizza();
-	std::cout << "Pizza Vegetariana: " << std::endl;
-	pizzaVegetariana->showIngredientes();
-
-
-	delete Hawaiana;
-	delete pizzaHawaiana;
-	delete Vegetariana;
-	delete pizzaVegetariana;
-
-
+	//clonar	
+	Prototype* prototipo2 = prototipo1->clone();
+	prototipo2->config("Ejemplo Clonado");
+	prototipo1->info();
+	prototipo2->info();
+	delete prototipo1;
+	delete prototipo2;
 	return 0;
 }

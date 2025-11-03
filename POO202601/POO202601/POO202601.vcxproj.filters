@@ -31,6 +31,9 @@
     <Filter Include="Source Files\ProgrammingPatterns\Builder">
       <UniqueIdentifier>{b3a8b09f-635e-4d67-8cee-f2fddf657127}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\ProgrammingPatterns\Prototype">
+      <UniqueIdentifier>{9773ff4f-6a44-4e8c-aa57-d56bcdac7b69}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Prerequisites.h">
@@ -119,6 +122,12 @@
     </ClInclude>
     <ClInclude Include="include\ProgrammingPatterns\Builder\BuilderPizzaVegetariana.h">
       <Filter>Header Files\ProgrammingPatterns\Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Prototype\Prototype.h">
+      <Filter>Header Files\ProgrammingPatterns\Prototype</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Prototype\PrototypeConcreto.h">
+      <Filter>Header Files\ProgrammingPatterns\Prototype</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
