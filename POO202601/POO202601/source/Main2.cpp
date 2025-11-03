@@ -1,17 +1,20 @@
 #include "Prerequisites.h"
-#include "ProgrammingPatterns/Adapter/InterfazVieja.h"
-#include "ProgrammingPatterns/Adapter/InterfazNueva.h"
-#include "ProgrammingPatterns/Adapter/Adapter.h"
+#include "ProgrammingPatterns/Adapter/Figuras.h"
+#include "ProgrammingPatterns/Adapter/Dibujable.h"
+#include "ProgrammingPatterns/Adapter/FigurasAdapter.h"
 
 int main() {
-	//crear instancia interfaz vieja
-	InterfazVieja* objetoViejo = new InterfazVieja();
-	InterfazNueva* objetoNuevo = new Adapter(objetoViejo);
+	Circulo* circulo = new Circulo();
+	Cuadrado* cuadrado = new Cuadrado();
 
-	//usar objeto nuevo que adapta el viejo
-	objetoNuevo->metodoNuevo();
+	Dibujable* adaptadorCirculo = new CirculoAdapter(circulo);
+	Dibujable* adaptadorCuadrado = new CuadradoAdapter(cuadrado);
 
-	delete objetoNuevo;
-	delete objetoViejo;
+	adaptadorCirculo->dibujar();
+	adaptadorCuadrado->dibujar();
 
+	delete adaptadorCirculo;
+	delete adaptadorCuadrado;
+	delete circulo;
+	delete cuadrado;
 }

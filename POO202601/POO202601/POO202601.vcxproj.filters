@@ -150,6 +150,15 @@
     <ClInclude Include="include\ProgrammingPatterns\Adapter\Adapter.h">
       <Filter>Header Files\ProgrammingPatterns\Adapter</Filter>
     </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Adapter\Figuras.h">
+      <Filter>Header Files\ProgrammingPatterns\Adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Adapter\Dibujable.h">
+      <Filter>Header Files\ProgrammingPatterns\Adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Adapter\FigurasAdapter.h">
+      <Filter>Header Files\ProgrammingPatterns\Adapter</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\Main2.cpp">
