@@ -1,20 +1,20 @@
 #include "Prerequisites.h"
-#include "ProgrammingPatterns/Decorator/CafeteriaConcreta.h"
-#include "ProgrammingPatterns/Decorator/DecoratorCafeteriaLeche.h"
-#include "ProgrammingPatterns/Decorator/DecoratorCafeteriaAzucar.h"
+#include "ProgrammingPatterns/Composite/Composite.h"
+#include "ProgrammingPatterns/Composite/Hoja.h"
+
 
 int main() {
-	Cafeteria* cafeteria = new CafeteriaConcreta();
-	DecoratorLeche* agregarLeche = new DecoratorLeche(cafeteria);
-	DecoratorAzucar* agregarAzucar = new DecoratorAzucar(cafeteria);
+	Hoja* hoja1 = new Hoja();
+	Hoja* hoja2 = new Hoja();
+	Composite* composite = new Composite();
 
-	cafeteria->prepararCafe();
-	agregarLeche->prepararCafe();
-	agregarAzucar->prepararCafe();
+	composite->add(hoja1);
+	composite->add(hoja2);
+	composite->operacion();
 
-	delete agregarAzucar;
-	delete agregarLeche;
-	delete cafeteria;
+	delete hoja1;
+	delete hoja2;
+	delete composite;
+
 	return 0;
-
 }

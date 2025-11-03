@@ -40,6 +40,9 @@
     <Filter Include="Header Files\ProgrammingPatterns\Decorator">
       <UniqueIdentifier>{ca43ee28-6bab-4674-b868-9b5cb07f8214}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\ProgrammingPatterns\Composite">
+      <UniqueIdentifier>{1dbfdea4-35a3-4e4d-8b18-a1b9edd13d90}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Prerequisites.h">
@@ -191,6 +194,12 @@
     </ClInclude>
     <ClInclude Include="include\ProgrammingPatterns\Decorator\DecoratorCafeteriaAzucar.h">
       <Filter>Header Files\ProgrammingPatterns\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Composite\Hoja.h">
+      <Filter>Header Files\ProgrammingPatterns\Composite</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Composite\Composite.h">
+      <Filter>Header Files\ProgrammingPatterns\Composite</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
