@@ -34,6 +34,9 @@
     <Filter Include="Header Files\ProgrammingPatterns\Prototype">
       <UniqueIdentifier>{9773ff4f-6a44-4e8c-aa57-d56bcdac7b69}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\ProgrammingPatterns\Adapter">
+      <UniqueIdentifier>{04bc6bdc-793d-432d-a349-a2c3d12543a6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Prerequisites.h">
@@ -137,6 +140,15 @@
     </ClInclude>
     <ClInclude Include="include\ProgrammingPatterns\Prototype\DocumentoConcretoImagen.h">
       <Filter>Header Files\ProgrammingPatterns\Prototype</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Adapter\InterfazVieja.h">
+      <Filter>Header Files\ProgrammingPatterns\Adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Adapter\InterfazNueva.h">
+      <Filter>Header Files\ProgrammingPatterns\Adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Adapter\Adapter.h">
+      <Filter>Header Files\ProgrammingPatterns\Adapter</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -1,27 +1,17 @@
 #include "Prerequisites.h"
-#include "ProgrammingPatterns/Prototype/DocumentoPrototype.h"
-#include "ProgrammingPatterns/Prototype/DocumentoConcretoTexto.h"
-#include "ProgrammingPatterns/Prototype/DocumentoConcretoImagen.h"
+#include "ProgrammingPatterns/Adapter/InterfazVieja.h"
+#include "ProgrammingPatterns/Adapter/InterfazNueva.h"
+#include "ProgrammingPatterns/Adapter/Adapter.h"
+
 int main() {
-	Documento* Texto = new DocumentoConcretoTexto();
-	Texto->config("Documento de Texto1");
+	//crear instancia interfaz vieja
+	InterfazVieja* objetoViejo = new InterfazVieja();
+	InterfazNueva* objetoNuevo = new Adapter(objetoViejo);
 
-	Documento* Imagen = new DocumentoConcretoImagen();
-	Imagen->config("Imagen.jpg");
+	//usar objeto nuevo que adapta el viejo
+	objetoNuevo->metodoNuevo();
 
-	Documento* copiaTexto = Texto->clone();
-	Documento* copiaImagen = Imagen->clone();
+	delete objetoNuevo;
+	delete objetoViejo;
 
-	copiaTexto->config("Copia de Texto1");
-	copiaImagen->config("Copia de Imagen.jpg");
-
-	Texto->info();
-	Imagen->info();
-	copiaTexto->info();
-	copiaImagen->info();
-
-	delete Texto;
-	delete Imagen;
-	delete copiaTexto;
-	delete copiaImagen;
 }
