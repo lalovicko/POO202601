@@ -5,7 +5,7 @@
 int main() {
 	Proxy* proxy = new Proxy();
 	proxy->solicitar();
-
+	proxy->solicitar();
 	delete proxy;
 
 
