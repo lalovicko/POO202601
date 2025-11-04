@@ -43,6 +43,9 @@
     <Filter Include="Header Files\ProgrammingPatterns\Composite">
       <UniqueIdentifier>{1dbfdea4-35a3-4e4d-8b18-a1b9edd13d90}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\ProgrammingPatterns\Proxy">
+      <UniqueIdentifier>{096e061d-8005-457f-83d9-fba6b07485eb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Prerequisites.h">
@@ -215,6 +218,15 @@
     </ClInclude>
     <ClInclude Include="include\ProgrammingPatterns\Composite\SistemaCarpeta.h">
       <Filter>Header Files\ProgrammingPatterns\Composite</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Proxy\Sujeto.h">
+      <Filter>Header Files\ProgrammingPatterns\Proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Proxy\SujetoReal.h">
+      <Filter>Header Files\ProgrammingPatterns\Proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Proxy\Proxy.h">
+      <Filter>Header Files\ProgrammingPatterns\Proxy</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
