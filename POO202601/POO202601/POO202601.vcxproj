@@ -164,6 +164,9 @@
     <ClInclude Include="include\Banco.h" />
     <ClInclude Include="include\CuentaBancaria.h" />
     <ClInclude Include="include\Estudiantes.h" />
+    <ClInclude Include="include\GameProgrammingPatterns\Observer\DisplayDevice.h" />
+    <ClInclude Include="include\GameProgrammingPatterns\Observer\Observer.h" />
+    <ClInclude Include="include\GameProgrammingPatterns\Observer\Sensor.h" />
     <ClInclude Include="include\Items.h" />
     <ClInclude Include="include\Prerequisites.h" />
     <ClInclude Include="include\ProgrammingPatterns\AbstractFactory\FabricaAbstracta.h" />

@@ -1,12 +1,14 @@
 #include "Prerequisites.h"
-#include "ProgrammingPatterns/Proxy/Proxy.h"
-
+#include "GameProgrammingPatterns/Observer/Sensor.h"
+#include "GameProgrammingPatterns/Observer/DisplayDevice.h"
 
 int main() {
-	Proxy* proxy = new Proxy();
-	proxy->solicitar();
-	proxy->solicitar();
-	delete proxy;
+	TemperaturaSensor sensor;
+	DisplayDevice display1;
+	sensor.addObserver(&display1);
+	sensor.setTemperatura(25);
+	sensor.setTemperatura(30);
+
 
 
 

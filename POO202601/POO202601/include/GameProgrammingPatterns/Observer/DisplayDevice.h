@@ -1,0 +1,18 @@
+#pragma once
+#include "Prerequisites.h"
+#include "GameProgrammingPatterns/Observer/Observer.h"
+
+class DisplayDevice : public Observer
+{
+public:
+	DisplayDevice()  = default;
+	~DisplayDevice() = default;
+
+	void onNotify(int _value) override {
+		std::cout << "Display Device: Temperature changed to " << _value << " degrees"<< std::endl;
+	}
+
+private:
+
+};
+
