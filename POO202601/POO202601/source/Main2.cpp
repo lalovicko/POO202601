@@ -1,15 +1,16 @@
 #include "Prerequisites.h"
-#include "GameProgrammingPatterns/Observer/Sensor.h"
-#include "GameProgrammingPatterns/Observer/DisplayDevice.h"
+#include "ProgrammingPatterns/Bridge/AbstraccionRefinada.h"
+#include "ProgrammingPatterns/Bridge/ImplementacionConcretaA.h"
+#include "ProgrammingPatterns/Bridge/ImplementacionConcretaB.h"
+
 
 int main() {
-	TemperaturaSensor sensor;
-	DisplayDevice display1;
-	sensor.addObserver(&display1);
-	sensor.setTemperatura(25);
-	sensor.setTemperatura(30);
-
-
+	Implementacion* implA = new ImplementacionConcretaA();
+	Abstraccion* abstraccionA = new AbstraccionRefinada(implA);
+	abstraccionA->operacion();
+	Implementacion* implB = new ImplementacionConcretaB();
+	Abstraccion* abstraccionB = new AbstraccionRefinada(implB);
+	abstraccionB->operacion();
 
 
 	return 0;
