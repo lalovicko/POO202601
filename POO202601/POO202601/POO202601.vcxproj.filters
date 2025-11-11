@@ -52,6 +52,9 @@
     <Filter Include="Header Files\GameProgrammingPatterns\Observer">
       <UniqueIdentifier>{0c2e9b44-7f04-47f6-adac-6d56c1ca9b13}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\ProgrammingPatterns\Bridge">
+      <UniqueIdentifier>{4a53d9df-0d52-4870-a8c0-a9b202ff2ab0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Prerequisites.h">
@@ -242,6 +245,33 @@
     </ClInclude>
     <ClInclude Include="include\GameProgrammingPatterns\Observer\DisplayDevice.h">
       <Filter>Header Files\GameProgrammingPatterns\Observer</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Bridge\AbstraccionRefinada.h">
+      <Filter>Header Files\ProgrammingPatterns\Bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Bridge\Abstraccion.h">
+      <Filter>Header Files\ProgrammingPatterns\Bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Bridge\Implementacion.h">
+      <Filter>Header Files\ProgrammingPatterns\Bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Bridge\ImplementacionConcretaA.h">
+      <Filter>Header Files\ProgrammingPatterns\Bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Bridge\ImplementacionConcretaB.h">
+      <Filter>Header Files\ProgrammingPatterns\Bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Bridge\Dispositivo.h">
+      <Filter>Header Files\ProgrammingPatterns\Bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Bridge\Television.h">
+      <Filter>Header Files\ProgrammingPatterns\Bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Bridge\Radio.h">
+      <Filter>Header Files\ProgrammingPatterns\Bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Bridge\Control.h">
+      <Filter>Header Files\ProgrammingPatterns\Bridge</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
