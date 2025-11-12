@@ -55,6 +55,9 @@
     <Filter Include="Header Files\ProgrammingPatterns\Bridge">
       <UniqueIdentifier>{4a53d9df-0d52-4870-a8c0-a9b202ff2ab0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\ProgrammingPatterns\ChainOfResponsability">
+      <UniqueIdentifier>{574fff89-a228-4f2e-b7c9-732184ea1654}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Prerequisites.h">
@@ -272,6 +275,18 @@
     </ClInclude>
     <ClInclude Include="include\ProgrammingPatterns\Bridge\Control.h">
       <Filter>Header Files\ProgrammingPatterns\Bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\ChainOfResponsability\Manejador.h">
+      <Filter>Header Files\ProgrammingPatterns\ChainOfResponsability</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\ChainOfResponsability\ManejadorConcretoA.h">
+      <Filter>Header Files\ProgrammingPatterns\ChainOfResponsability</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\ChainOfResponsability\ManejadorConcretoB.h">
+      <Filter>Header Files\ProgrammingPatterns\ChainOfResponsability</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\ChainOfResponsability\ManejadorConcretoC.h">
+      <Filter>Header Files\ProgrammingPatterns\ChainOfResponsability</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
