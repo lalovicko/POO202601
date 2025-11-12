@@ -1,19 +1,20 @@
 #include "Prerequisites.h"
-#include "ProgrammingPatterns/ChainOfResponsability/ManejadorConcretoA.h"
-#include "ProgrammingPatterns/ChainOfResponsability/ManejadorConcretoB.h"
-#include "ProgrammingPatterns/ChainOfResponsability/ManejadorConcretoC.h"
+#include "ProgrammingPatterns/ChainOfResponsability/ManejadorDirectivo.h"
+#include "ProgrammingPatterns/ChainOfResponsability/ManejadorGerente.h"
+#include "ProgrammingPatterns/ChainOfResponsability/ManejadorDirectorGeneral.h"
 
 
 int main() {
-	ManejadorConcretoC manejadorC(nullptr, "none");
-	ManejadorConcretoB manejadorB(&manejadorC, "ManejadorC");
-	ManejadorConcretoA manejadorA(&manejadorB, "ManejadorB");
+	ManejadorDirectorGeneral manejadorDirectorGeneral(nullptr);
+	ManejadorGerente manejadorGerente(&manejadorDirectorGeneral);
+	ManejadorDirectivo manejadorDirectivo(&manejadorGerente);
 
-	int peticiones[] = { 2, 5, 14, 22, 18, 3, 27, 20 };
-	for (int peticion : peticiones) {
-		manejadorA.manejarPeticion(peticion);
+	int montosSolicitados[] = { 500, 5000, 20000 };
+
+	for (int monto : montosSolicitados) {
+		manejadorDirectivo.getMonto(monto);
+		std::cout << std::endl;
 	}
-
 
 	return 0;
 }

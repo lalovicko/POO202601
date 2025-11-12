@@ -60,9 +60,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="include\Prerequisites.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="include\Items.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -286,6 +283,21 @@
       <Filter>Header Files\ProgrammingPatterns\ChainOfResponsability</Filter>
     </ClInclude>
     <ClInclude Include="include\ProgrammingPatterns\ChainOfResponsability\ManejadorConcretoC.h">
+      <Filter>Header Files\ProgrammingPatterns\ChainOfResponsability</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Prerequisites.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\ChainOfResponsability\Solicitud.h">
+      <Filter>Header Files\ProgrammingPatterns\ChainOfResponsability</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\ChainOfResponsability\ManejadorDirectivo.h">
+      <Filter>Header Files\ProgrammingPatterns\ChainOfResponsability</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\ChainOfResponsability\ManejadorGerente.h">
+      <Filter>Header Files\ProgrammingPatterns\ChainOfResponsability</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\ChainOfResponsability\ManejadorDirectorGeneral.h">
       <Filter>Header Files\ProgrammingPatterns\ChainOfResponsability</Filter>
     </ClInclude>
   </ItemGroup>
