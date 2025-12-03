@@ -1,24 +1,14 @@
 #include "Prerequisites.h"
-#include "GameProgrammingPatterns/State/Player.h"
-#include "GameProgrammingPatterns/State/RageState.h"
-#include "GameProgrammingPatterns/State/WeakState.h"
-#include "GameProgrammingPatterns/State/NormalState.h"
+#include "GameProgrammingPatterns/State/Car.h"
+#include "GameProgrammingPatterns/State/FreeState.h"
+#include "GameProgrammingPatterns/State/TrafficState.h"
 
 int main() {
-	Player* player = new Player();
-	player->Attack();
-	player->Move();
-	player->Defend();
-	std::cout << "Player gets hurt" << std::endl;
-	player->setState(new WeakState());
-	player->Attack();
-	player->Move();
-	player->Defend();
-	std::cout << "Player gets angry" << std::endl;
-	player->setState(new RageState());
-	player->Attack();
-	player->Move();
-	player->Defend();
-	delete player;
-    return 0;
+	Car* car = new Car();
+	car->Accelerate();
+	car->Break();
+	car->setState(new TrafficState());
+	car->Accelerate();
+	car->Break();
+	delete car;
 }

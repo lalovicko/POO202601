@@ -70,6 +70,12 @@
     <Filter Include="Header Files\GameProgrammingPatterns\State">
       <UniqueIdentifier>{a5efeaa1-5077-47c8-9844-7d6eec04b2f0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\GameProgrammingPatterns\State\Clase">
+      <UniqueIdentifier>{f6f89ae5-64d8-4fb3-bf10-5ea55af5fd50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GameProgrammingPatterns\State\Practica">
+      <UniqueIdentifier>{c6720be2-9ca9-44cd-a8b8-527f679b3277}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Items.h">
@@ -345,20 +351,32 @@
     <ClInclude Include="include\GameProgrammingPatterns\Command\Calculadora.h">
       <Filter>Header Files\GameProgrammingPatterns\Command\Invoker</Filter>
     </ClInclude>
-    <ClInclude Include="include\GameProgrammingPatterns\State\PlayerState.h">
-      <Filter>Header Files\GameProgrammingPatterns\State</Filter>
-    </ClInclude>
     <ClInclude Include="include\GameProgrammingPatterns\State\NormalState.h">
-      <Filter>Header Files\GameProgrammingPatterns\State</Filter>
-    </ClInclude>
-    <ClInclude Include="include\GameProgrammingPatterns\State\WeakState.h">
-      <Filter>Header Files\GameProgrammingPatterns\State</Filter>
-    </ClInclude>
-    <ClInclude Include="include\GameProgrammingPatterns\State\RageState.h">
-      <Filter>Header Files\GameProgrammingPatterns\State</Filter>
+      <Filter>Header Files\GameProgrammingPatterns\State\Clase</Filter>
     </ClInclude>
     <ClInclude Include="include\GameProgrammingPatterns\State\Player.h">
-      <Filter>Header Files\GameProgrammingPatterns\State</Filter>
+      <Filter>Header Files\GameProgrammingPatterns\State\Clase</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingPatterns\State\PlayerState.h">
+      <Filter>Header Files\GameProgrammingPatterns\State\Clase</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingPatterns\State\RageState.h">
+      <Filter>Header Files\GameProgrammingPatterns\State\Clase</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingPatterns\State\WeakState.h">
+      <Filter>Header Files\GameProgrammingPatterns\State\Clase</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingPatterns\State\CarState.h">
+      <Filter>Header Files\GameProgrammingPatterns\State\Practica</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingPatterns\State\TrafficState.h">
+      <Filter>Header Files\GameProgrammingPatterns\State\Practica</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingPatterns\State\FreeState.h">
+      <Filter>Header Files\GameProgrammingPatterns\State\Practica</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingPatterns\State\Car.h">
+      <Filter>Header Files\GameProgrammingPatterns\State\Practica</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
