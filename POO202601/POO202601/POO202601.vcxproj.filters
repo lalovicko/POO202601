@@ -79,6 +79,12 @@
     <Filter Include="Header Files\GameProgrammingPatterns\Strategy">
       <UniqueIdentifier>{e8bc2b6e-b5b9-48b7-bd0f-23b6ea716e92}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\GameProgrammingPatterns\Strategy\Clase">
+      <UniqueIdentifier>{df9c0619-3e39-44b8-9a74-8dc1e4d4ddd1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GameProgrammingPatterns\Strategy\Practica">
+      <UniqueIdentifier>{2c1e43a0-8542-4656-a0aa-71bdbda3e090}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Items.h">
@@ -382,19 +388,34 @@
       <Filter>Header Files\GameProgrammingPatterns\State\Practica</Filter>
     </ClInclude>
     <ClInclude Include="include\GameProgrammingPatterns\Strategy\IAttackStrategy.h">
-      <Filter>Header Files\GameProgrammingPatterns\Strategy</Filter>
-    </ClInclude>
-    <ClInclude Include="include\GameProgrammingPatterns\Strategy\MeleeAttackStrategy.h">
-      <Filter>Header Files\GameProgrammingPatterns\Strategy</Filter>
+      <Filter>Header Files\GameProgrammingPatterns\Strategy\Clase</Filter>
     </ClInclude>
     <ClInclude Include="include\GameProgrammingPatterns\Strategy\MagicAttackStrategy.h">
-      <Filter>Header Files\GameProgrammingPatterns\Strategy</Filter>
+      <Filter>Header Files\GameProgrammingPatterns\Strategy\Clase</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingPatterns\Strategy\MeleeAttackStrategy.h">
+      <Filter>Header Files\GameProgrammingPatterns\Strategy\Clase</Filter>
     </ClInclude>
     <ClInclude Include="include\GameProgrammingPatterns\Strategy\Player.h">
-      <Filter>Header Files\GameProgrammingPatterns\Strategy</Filter>
+      <Filter>Header Files\GameProgrammingPatterns\Strategy\Clase</Filter>
     </ClInclude>
     <ClInclude Include="include\GameProgrammingPatterns\Strategy\RangedAttackStrategy.h">
-      <Filter>Header Files\GameProgrammingPatterns\Strategy</Filter>
+      <Filter>Header Files\GameProgrammingPatterns\Strategy\Clase</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingPatterns\Strategy\IMovementStrategy.h">
+      <Filter>Header Files\GameProgrammingPatterns\Strategy\Practica</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingPatterns\Strategy\WalkMovementStrategy.h">
+      <Filter>Header Files\GameProgrammingPatterns\Strategy\Practica</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingPatterns\Strategy\RunMovementStrategy.h">
+      <Filter>Header Files\GameProgrammingPatterns\Strategy\Practica</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingPatterns\Strategy\StealthMovement.h">
+      <Filter>Header Files\GameProgrammingPatterns\Strategy\Practica</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingPatterns\Strategy\PlayerMovement.h">
+      <Filter>Header Files\GameProgrammingPatterns\Strategy\Practica</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

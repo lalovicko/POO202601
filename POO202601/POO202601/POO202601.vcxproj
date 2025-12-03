@@ -188,10 +188,15 @@
     <ClInclude Include="include\GameProgrammingPatterns\State\TrafficState.h" />
     <ClInclude Include="include\GameProgrammingPatterns\State\WeakState.h" />
     <ClInclude Include="include\GameProgrammingPatterns\Strategy\IAttackStrategy.h" />
+    <ClInclude Include="include\GameProgrammingPatterns\Strategy\IMovementStrategy.h" />
     <ClInclude Include="include\GameProgrammingPatterns\Strategy\MagicAttackStrategy.h" />
     <ClInclude Include="include\GameProgrammingPatterns\Strategy\MeleeAttackStrategy.h" />
     <ClInclude Include="include\GameProgrammingPatterns\Strategy\Player.h" />
+    <ClInclude Include="include\GameProgrammingPatterns\Strategy\PlayerMovement.h" />
     <ClInclude Include="include\GameProgrammingPatterns\Strategy\RangedAttackStrategy.h" />
+    <ClInclude Include="include\GameProgrammingPatterns\Strategy\RunMovementStrategy.h" />
+    <ClInclude Include="include\GameProgrammingPatterns\Strategy\StealthMovement.h" />
+    <ClInclude Include="include\GameProgrammingPatterns\Strategy\WalkMovementStrategy.h" />
     <ClInclude Include="include\Items.h" />
     <ClInclude Include="include\Prerequisites.h" />
     <ClInclude Include="include\ProgrammingPatterns\AbstractFactory\FabricaAbstracta.h" />

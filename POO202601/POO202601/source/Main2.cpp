@@ -1,19 +1,24 @@
 #include "Prerequisites.h"
-#include "GameProgrammingPatterns/Strategy/RangedAttackStrategy.h"
-#include "GameProgrammingPatterns/Strategy/Player.h"
-#include "GameProgrammingPatterns/Strategy/MeleeAttackStrategy.h"
-#include "GameProgrammingPatterns/Strategy/MagicAttackStrategy.h"
+#include "GameProgrammingPatterns/Strategy/RunMovementStrategy.h"
+#include "GameProgrammingPatterns/Strategy/PlayerMovement.h"
+#include "GameProgrammingPatterns/Strategy/WalkMovementStrategy.h"
+#include "GameProgrammingPatterns/Strategy/StealthMovement.h"
 
 int main() {
-	Player player;
-	player.setAttackStrategy(std::make_unique<MeleeAttackStrategy>());
-	int meleeDamage = player.attack(50);
-	std::cout << "Melee Attack Damage: " << meleeDamage << std::endl;
-	player.setAttackStrategy(std::make_unique<RangedAttackStrategy>());
-	int rangedDamage = player.attack(50);
-	std::cout << "Ranged Attack Damage: " << rangedDamage << std::endl;
-	player.setAttackStrategy(std::make_unique<MagicAttackStrategy>());
-	int magicDamage = player.attack(50);
-	std::cout << "Magic Attack Damage: " << magicDamage << std::endl;
-
+	PlayerMovement player;
+	player.setMovementStrategy(std::make_unique<RunMovementStrategy>());
+	int RunMovement = player.velocidad(15);
+	player.ruido(15);
+	player.energia(15);
+	std::cout << "Run Movement - Velocidad: " << RunMovement << ", Ruido: " << RunMovement << ", Energia: " << RunMovement << std::endl;
+	player.setMovementStrategy(std::make_unique<WalkMovementStrategy>());
+	int WalkMovement = player.velocidad(15);
+	player.ruido(15);
+	player.energia(15);
+	std::cout << "Walk Movement - Velocidad: " << WalkMovement << ", Ruido: " << WalkMovement << ", Energia: " << WalkMovement << std::endl;
+	player.setMovementStrategy(std::make_unique<StealthMovementStrategy>());
+	int StealthMovement = player.velocidad(15);
+	player.ruido(15);
+	player.energia(15);
+	std::cout << "Stealth Movement - Velocidad: " << StealthMovement << ", Ruido: " << StealthMovement << ", Energia: " << StealthMovement << std::endl;
 }
