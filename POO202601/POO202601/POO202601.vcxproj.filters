@@ -67,6 +67,9 @@
     <Filter Include="Header Files\GameProgrammingPatterns\Command\Invoker">
       <UniqueIdentifier>{ca098042-1d29-43ef-b5c3-1605fd958f06}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\GameProgrammingPatterns\State">
+      <UniqueIdentifier>{a5efeaa1-5077-47c8-9844-7d6eec04b2f0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Items.h">
@@ -341,6 +344,21 @@
     </ClInclude>
     <ClInclude Include="include\GameProgrammingPatterns\Command\Calculadora.h">
       <Filter>Header Files\GameProgrammingPatterns\Command\Invoker</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingPatterns\State\PlayerState.h">
+      <Filter>Header Files\GameProgrammingPatterns\State</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingPatterns\State\NormalState.h">
+      <Filter>Header Files\GameProgrammingPatterns\State</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingPatterns\State\WeakState.h">
+      <Filter>Header Files\GameProgrammingPatterns\State</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingPatterns\State\RageState.h">
+      <Filter>Header Files\GameProgrammingPatterns\State</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingPatterns\State\Player.h">
+      <Filter>Header Files\GameProgrammingPatterns\State</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

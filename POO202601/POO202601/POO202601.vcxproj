@@ -178,6 +178,11 @@
     <ClInclude Include="include\GameProgrammingPatterns\Observer\DisplayDevice.h" />
     <ClInclude Include="include\GameProgrammingPatterns\Observer\Observer.h" />
     <ClInclude Include="include\GameProgrammingPatterns\Observer\Sensor.h" />
+    <ClInclude Include="include\GameProgrammingPatterns\State\NormalState.h" />
+    <ClInclude Include="include\GameProgrammingPatterns\State\Player.h" />
+    <ClInclude Include="include\GameProgrammingPatterns\State\PlayerState.h" />
+    <ClInclude Include="include\GameProgrammingPatterns\State\RageState.h" />
+    <ClInclude Include="include\GameProgrammingPatterns\State\WeakState.h" />
     <ClInclude Include="include\Items.h" />
     <ClInclude Include="include\Prerequisites.h" />
     <ClInclude Include="include\ProgrammingPatterns\AbstractFactory\FabricaAbstracta.h" />
