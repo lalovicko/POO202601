@@ -1,43 +1,44 @@
 #include "Prerequisites.h"
+#include "GameProgrammingPatterns/Command/ControlRemoto.h"
+#include "GameProgrammingPatterns/Command/ComandoEncender.h"
+#include "GameProgrammingPatterns/Command/ComandoApagar.h"
+#include "GameProgrammingPatterns/Command/Luz.h"
+#include "GameProgrammingPatterns/Command/Suma.h"
+#include "GameProgrammingPatterns/Command/Resta.h"
+#include "GameProgrammingPatterns/Command/Division.h"
+#include "GameProgrammingPatterns/Command/Multiplicacion.h"
+#include "GameProgrammingPatterns/Command/Calculadora.h"
 
-std::mutex mtx;
-int global_counter = 0;	
 
-void thread(int id) {
-	for (unsigned int i = 0; i < 5; ++i) {
-		mtx.lock();
-		std::cout << "Thread " << id << " is running iteration " << i+1 << std::endl;
-		mtx.unlock();
-	}
-	std::cout << std:: endl;
-}
 
-void threadName(std::string name) {
-	for (unsigned int i = 0; i < 5; ++i) {
-		mtx.lock();
-		std::cout << "Thread " << name << " is running iteration " << i + 1 << std::endl;
-		mtx.unlock();
-	}
-	std::cout << std::endl;
-}
-
-void threadCount(int count) {
-	for (unsigned int i = 0; i < 500; ++i) {
-		mtx.lock();
-		global_counter++;
-		mtx.unlock();
-	}
-	std::cout << std::endl;
-}
 
 int main() {
-	std::thread t1(thread, 1);
-	std::thread t2(threadName, "Churro");
-	std::thread t3(threadCount, 3);
-	t1.join();
-	t2.join();
-	t3.join();
-	std::cout << "Global counter: " << global_counter << std::endl;
+    int resultado = 0; //valor inicial
 
-	return 0;
+    Suma suma(resultado, 8);
+    Resta resta(resultado, 3);
+    Multiplicacion multiplicacion(resultado, 4);
+    Division division(resultado, 2);
+
+    Calculadora calculadora;
+
+    calculadora.ejecutarOperacion(&suma);
+    std::cout << "Despues de suma: " << resultado << std::endl;
+
+    calculadora.ejecutarOperacion(&resta);
+    std::cout << "Despues de resta: " << resultado << std::endl;
+
+    calculadora.deshacerUltimaOperacion();
+    std::cout << "Despues de deshacer resta: " << resultado << std::endl;
+
+    calculadora.rehacerUltimaOperacion();
+    std::cout << "Despues de rehacer resta: " << resultado << std::endl;
+
+    calculadora.ejecutarOperacion(&multiplicacion);
+    std::cout << "Despues de multiplicacion: " << resultado << std::endl;
+
+    calculadora.ejecutarOperacion(&division);
+    std::cout << "Despues de division: " << resultado << std::endl;
+
+    return 0;
 }

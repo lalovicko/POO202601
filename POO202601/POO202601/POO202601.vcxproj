@@ -164,6 +164,17 @@
     <ClInclude Include="include\Banco.h" />
     <ClInclude Include="include\CuentaBancaria.h" />
     <ClInclude Include="include\Estudiantes.h" />
+    <ClInclude Include="include\GameProgrammingPatterns\Command\Calculadora.h" />
+    <ClInclude Include="include\GameProgrammingPatterns\Command\Comando.h" />
+    <ClInclude Include="include\GameProgrammingPatterns\Command\ComandoApagar.h" />
+    <ClInclude Include="include\GameProgrammingPatterns\Command\ComandoEncender.h" />
+    <ClInclude Include="include\GameProgrammingPatterns\Command\ControlRemoto.h" />
+    <ClInclude Include="include\GameProgrammingPatterns\Command\Division.h" />
+    <ClInclude Include="include\GameProgrammingPatterns\Command\Luz.h" />
+    <ClInclude Include="include\GameProgrammingPatterns\Command\Multiplicacion.h" />
+    <ClInclude Include="include\GameProgrammingPatterns\Command\Operacion.h" />
+    <ClInclude Include="include\GameProgrammingPatterns\Command\Resta.h" />
+    <ClInclude Include="include\GameProgrammingPatterns\Command\Suma.h" />
     <ClInclude Include="include\GameProgrammingPatterns\Observer\DisplayDevice.h" />
     <ClInclude Include="include\GameProgrammingPatterns\Observer\Observer.h" />
     <ClInclude Include="include\GameProgrammingPatterns\Observer\Sensor.h" />
